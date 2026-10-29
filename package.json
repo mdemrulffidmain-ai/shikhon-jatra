@@ -13,8 +13,8 @@
     "server": "node server/server.mjs"
   },
   "dependencies": {
-    "@capacitor-community/speech-recognition": "latest",
-    "@capacitor-community/text-to-speech": "latest",
+    "@capacitor-community/speech-recognition": "^7.0.0",
+    "@capacitor-community/text-to-speech": "^7.0.0",
     "@capacitor/android": "^7.0.0",
     "@capacitor/app": "^7.0.0",
     "@capacitor/core": "^7.0.0",
