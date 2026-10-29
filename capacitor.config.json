@@ -1,0 +1,7 @@
+{
+  "appId": "com.shikhon.jatra",
+  "appName": "শিখন যাত্রা",
+  "webDir": "dist",
+  "server": { "androidScheme": "https" },
+  "android": { "allowMixedContent": false }
+}

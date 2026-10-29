@@ -1,0 +1,30 @@
+{
+  "name": "shikhon-jatra",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "আমার শিখন যাত্রা: শিশুদের জন্য বাংলা, English, গণিত ও জীবন-শিক্ষার মোবাইল অ্যাপ",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "node scripts/selftest.mjs && node scripts/mathcheck.mjs && node scripts/scicheck.mjs && node scripts/highcheck.mjs && node scripts/servertest.mjs",
+    "sync": "npm run build && npx cap sync android",
+    "android": "npm run sync && npx cap open android",
+    "server": "node server/server.mjs"
+  },
+  "dependencies": {
+    "@capacitor-community/speech-recognition": "latest",
+    "@capacitor-community/text-to-speech": "latest",
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/app": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/preferences": "^7.0.0",
+    "@fontsource/baloo-da-2": "^5.0.0",
+    "@fontsource/hind-siliguri": "^5.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.0.0",
+    "vite": "^5.4.0"
+  }
+}
